@@ -1,0 +1,252 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:courier;
+}
+
+body {
+    height:100vh;
+    width:100vw;
+
+    background-color:orange;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* MAIN CONTAINER */
+
+
+#main-container {
+    height:768px;
+    width:1024px;
+
+    border-radius:10px;
+    background-color:#ffdb99;
+}
+
+
+/* SCORE CONTAINER */
+
+
+#score-container {
+    height:150px;
+    width:1024px;
+
+    border-radius:10px 10px 0px 0px;
+    background-color:#6666ff;
+    
+    display:flex;
+    justify-content: space-around;
+}
+
+/* GENERAL LETTERS STYLE */
+
+.G {
+    font-size: 100px;
+    color:white;
+    text-shadow:black 0px 0px 10px;
+    user-select:none;
+}
+
+.lifes {
+    height:150px;
+    width:250px;
+
+    border-right: solid white;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-number {
+    height:150px;
+    width:750px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    color: crimson;
+}
+
+
+/* GAME CONTAINER */
+
+
+#game-container {
+    position:relative;
+    height:618px;
+    width:1024px;
+
+    border-radius:0px 0px 10px 10px;
+    background-color:#f6be7d;
+
+    overflow:hidden;
+}
+
+/* BALL */
+
+.ball {
+    position:absolute;
+    
+    height:60px;
+    width:60px;
+
+    border-radius:100%;
+    background-color:hsl(31 100% 60% / 1);
+
+    box-shadow:-5px -10px 20px 12px inset hsl(32 100% 38% / 1);
+
+    display:none;
+}
+
+/* PLATFORM */
+
+.platform {
+    position:absolute;
+    top:618px;
+    
+    height:55px;
+    width:256px; /* 256 - 192 - 128 */
+
+    border:12px outset #1840da;
+    border-radius:4px;
+    background-color: hsl(228 80% 38% / 1);
+
+}
+
+/* DEATHLY SPIKES */
+
+.top-spikes {
+    position:relative;
+    top:-24px;
+    left:-28px;
+    
+    height:50px;
+    width:min-content;
+    
+    line-height:70px;
+    font-size:100px;
+
+    rotate: 180deg;
+
+    overflow:hidden;
+    user-select:none;
+}
+
+.spikes {
+    position:absolute;
+    
+    height:55px;
+    width:290px;
+    
+    font-size:100px;
+    line-height:80px;
+
+    overflow:hidden;
+    user-select:none;
+}
+
+/* START GAME - GAME OVER */
+
+#start-game-cont {
+    position:relative;
+    top:-618px;
+    height:618px;
+    width:1024px;
+
+    background-color:#ffa60099;
+    
+    display:flex; /*Flex*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    overflow:hidden;
+}
+
+.Gnrl {
+    color:#f2f2f2;
+    text-shadow:darkred -1px 0px 10px; 
+    user-select:none;
+}
+
+.phrase {
+    font-size:45px;
+}
+
+.start-game {
+    font-size: 66px;
+    color:crimson;
+    text-shadow: red -1px 0px 10px;
+}
+    
+
+.hi-score {
+    font-size:55px;
+    color:#ffffff;
+}
+
+.controls {
+    font-size:50px;
+    color:#1a1aff;
+    text-shadow: blue -1px 0px 10px;
+}
+
+.how-to-play {
+    font-size:35px;
+    
+}
+
+/* CONTINUE */
+
+#lose-life-continue {
+    position:relative;
+    top:-618px;
+    height:618px;
+    width:1024px;
+
+    background-color:#ffa60099;
+    
+    display:none; /*flex*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    overflow:hidden;
+}
+
+.continue {
+    font-size: 80px;
+    color:crimson;
+    text-shadow: red -1px 0px 10px;
+}
+
+/* GAME OVER */
+
+#game-over-container {
+    position:relative;
+    top:-618px;
+    height:618px;
+    width:1024px;
+
+    background-color:#ffa600db;
+    
+    display:none; /*Flex*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    overflow:hidden;
+}
+
+.score {
+    font-size:50px;
+}
